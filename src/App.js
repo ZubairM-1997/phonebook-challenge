@@ -1,26 +1,36 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ContactsList from './ContactsList'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reactijisdjjds
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+  state = {
+    contacts: []
+  }
+
+  componentDidMount(){
+    return fetch('http://www.mocky.io/v2/581335f71000004204abaf83')
+            .then(resp => resp.json())
+            .then(data => this.setState({
+              contacts: data.contacts
+              } , () => {
+                console.log(this.state.contacts)
+              }
+            )
+          )
+
+  }
+
+
+  render(){
+    return(
+      <div>
+        <ContactsList contacts={this.state.contacts}/>
+      </div>
+
+    )
+  }
 }
 
 export default App;
