@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ContactsList from './ContactsList'
 
+
 class App extends React.Component{
 
   state = {
@@ -23,7 +24,12 @@ class App extends React.Component{
   }
 
 
+
+
+
+
   render(){
+
     return(
       <div>
         <ContactsList contacts={this.state.contacts}/>
