@@ -1,7 +1,7 @@
 
 ### `Introduction`
 
-This was a code challenge on Hackajob, an external api was given, containing an array of phone contacts, the aim was to make a simple web app that would allow the user to search or sort the contact(s)
+This was a code challenge on Hackajob, an external api was given, containing an array of phone contacts, the aim was to make a simple web app that would allow the user to search or sort the contact(s). This was made with React.js, a frontend library which makes the development of single page applications a lot easier. Before you do anything, make sure you have the latest version of React.js installed. 
 
 ![Phonebook demo](demo.gif)
 
