@@ -14,8 +14,8 @@ This was a code challenge on Hackajob, an external api was given, containing an 
 
 ### `Credits`
 
-Semantic UI API - Checkbox & Input 
-Hackajob Phonebook API 
+1) Semantic UI API - Checkbox & Input 
+2) Hackajob Phonebook API 
 
 
 
