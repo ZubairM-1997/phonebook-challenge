@@ -5,6 +5,8 @@ import SearchBar from './SearchBar'
 
 
 
+
+
 export default class ContactsList extends React.Component{
 
 	state = {
@@ -18,18 +20,14 @@ export default class ContactsList extends React.Component{
 	}
 
 
-
-
-
 	render(){
-
-
 
 
 		return(
 			<div>
 
 				<SearchBar stateChange={this.changeSearchTerm}/>
+
 				{
 					this.props.contacts
 						.filter(contact => contact.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))

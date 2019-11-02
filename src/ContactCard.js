@@ -5,8 +5,8 @@ export default class ContactCard extends React.Component{
 		return(
 			<div>
 				<h1>{this.props.name}</h1>
-				<li>{this.props.number}</li>
-				<li>{this.props.address}</li>
+				<li>Number: {this.props.number}</li>
+				<li>Address: {this.props.address}</li>
 			</div>
 		)
 	}

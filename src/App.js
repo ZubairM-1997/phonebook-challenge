@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ContactsList from './ContactsList'
+import CheckBox from './CheckBox'
 
 
 class App extends React.Component{
@@ -23,15 +24,27 @@ class App extends React.Component{
 
   }
 
+  handleStateChange = (event) => {
 
+    let sortedData = this.state.contacts
+    sortedData.sort((a,b) => a.name.localeCompare(b.name))
+    this.setState({
+      contacts: sortedData
+    })
+
+  }
 
 
 
 
   render(){
 
+
+
+
     return(
       <div>
+        <CheckBox stateChange={this.handleStateChange}/>
         <ContactsList contacts={this.state.contacts}/>
       </div>
 

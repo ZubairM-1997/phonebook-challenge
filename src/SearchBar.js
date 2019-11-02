@@ -5,7 +5,7 @@ export default class SearchBar extends React.Component{
 	render(){
 		return(
 			<div>
-				<Input placeholder="search...." onChange={this.props.stateChange}/>
+				<Input placeholder="Search by Name" onChange={this.props.stateChange}/>
 			</div>
 		)
 	}
